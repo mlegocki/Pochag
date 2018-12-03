@@ -4,7 +4,7 @@ import { View } from 'react-native';
 
 // Components
 import PText from 'src/components/Text/PText';
-import NavigationHeader from 'src/components/NavigationHeader/NavigationHeader';
+import PNavigationHeader from 'src/components/NavigationHeader/PNavigationHeader';
 
 // Utilities
 import StyleUtil from 'src/utils/StyleUtil';
@@ -25,9 +25,9 @@ export class Home extends Component {
     const { navigation } = this.props;
     return (
       <View>
-        <NavigationHeader
-          title={'Home Screen'}
+        <PNavigationHeader
           navigation={navigation}
+          icon={'menu'}
         />
         <PText>
           Home TEXT
@@ -35,7 +35,6 @@ export class Home extends Component {
       </View>
     )
   }
-
 }
 
 const mapStateToProps = () => {
