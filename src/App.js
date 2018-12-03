@@ -9,7 +9,7 @@ import StyleUtil from 'src/utils/StyleUtil';
 import AppStyles from 'src/AppStyles';
 
 // Routing
-import NavigationStack from 'src/routing/PostLoginStack';
+import NavigationStack from 'src/routing/PostLoginDrawer';
 
 // Store
 import store from 'src/store/configureStore';
