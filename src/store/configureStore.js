@@ -3,7 +3,7 @@ import { createStore } from 'redux';
 import logger from 'redux-logger'
 import createSagaMiddleware from 'redux-saga'
 
-import testReducer from 'src/store/testReducer';
+import cameraRoll from 'src/store/cameraRollReducer';
 import testReducerTwo from 'src/store/testReducerTwo';
 
 import rootSaga from 'src/sagas/rootSaga';
@@ -11,7 +11,7 @@ import rootSaga from 'src/sagas/rootSaga';
 const sagaMiddleware = createSagaMiddleware()
 
 const testStore = combineReducers({
-  testReducer,
+  cameraRoll,
   testReducerTwo
 });
 
