@@ -1,9 +1,10 @@
+// @flow
+
 import React from 'react';
 import { Text } from 'react-native';
 
 // Types
 import type {StyleSheetType} from '@types/types';
-
 
 // Utilities
 import StyleUtil from 'src/utils/StyleUtil';
