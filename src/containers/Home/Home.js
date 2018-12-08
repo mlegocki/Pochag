@@ -29,18 +29,19 @@ export class Home extends Component {
           navigation={navigation}
           icon={'menu'}
         />
-        <PText>
-          Home TEXT
-        </PText>
+        <View>
+          <PText>
+            List of Stories
+          </PText>
+        </View>
       </View>
     )
   }
 }
 
-const mapStateToProps = () => {
+const mapStateToProps = (state) => {
   return {
-
   }
 };
 
-export default Home;
+export default connect(mapStateToProps)(Home);
