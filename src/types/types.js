@@ -11,9 +11,9 @@ export type NavigationType = NavigationScreenProp;
 // cameraRoll
 export type photo = { 
   groupName: string, 
+  image: image,
   timestamp: number,
-  type: string,
-  image: image
+  type: string
 };
 
 type image = { 
