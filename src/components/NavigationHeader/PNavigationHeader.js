@@ -1,6 +1,10 @@
+// @flow
 import React from 'react';
 import { View, TouchableHighlight } from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialIcons'
+import Icon from 'react-native-vector-icons/MaterialIcons';
+
+// Types
+import type { NavigationType } from '@types/types';
 
 // Components
 import PText from 'src/components/Text/PText';
@@ -15,10 +19,17 @@ import StyleUtil from 'src/utils/StyleUtil';
 // Constants
 import * as CONSTANTS from 'src/assets/strings/strings';
 
-export const PNavigationHeader = (props) => {
-  const { title, icon, navigation } = props;
-  const styles = StyleUtil.getStyles(PNavigationHeaderStyles);
+type PropTypes = {
+  title?: string,
+  icon?: string,
+  navigation: NavigationType
+};
 
+const styles = StyleUtil.getStyles(PNavigationHeaderStyles);
+
+export const PNavigationHeader = (props: PropTypes) => {
+  const { title, icon, navigation } = props;
+  
   return (
     <View style={styles.container}>
       <TouchableHighlight
@@ -36,7 +47,7 @@ export const PNavigationHeader = (props) => {
         </PText>
       </View>
     </View>
-  )
-}
+  );
+};
 
 export default PNavigationHeader;
