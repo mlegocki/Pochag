@@ -6,14 +6,13 @@ const INITIAL_STATE = {
 
 function testReducer(state = INITIAL_STATE, action) {
   switch (action.type) {
-    case TEST:
+    case 'TEST_SAGA':
       return {
-        ...state,
-        test: !state.test
+        test: true
       };
     default:
       return state
   }
 }
 
-export default testReducer
+export default testReducer;

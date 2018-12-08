@@ -1,21 +1,24 @@
 import { combineReducers, applyMiddleware } from 'redux';
 import { createStore } from 'redux';
-import { composeWithDevTools } from 'redux-devtools-extension';
+import logger from 'redux-logger'
+import createSagaMiddleware from 'redux-saga'
 
-import testReducer from './testReducer';
-import testReducerTwo from './testReducerTwo';
+import testReducer from 'src/store/testReducer';
+import testReducerTwo from 'src/store/testReducerTwo';
+
+import rootSaga from 'src/sagas/rootSaga';
+
+const sagaMiddleware = createSagaMiddleware()
 
 const testStore = combineReducers({
   testReducer,
   testReducerTwo
 });
 
-const middleware = [];
+const middleware = [sagaMiddleware, logger];
 
-const store = createStore(testStore,
-  composeWithDevTools(
-    applyMiddleware(...middleware),
-  )
-);
+const store = createStore(testStore, applyMiddleware(...middleware));
+
+sagaMiddleware.run(rootSaga)
 
 export default store;
