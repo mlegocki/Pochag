@@ -2,7 +2,6 @@
 // Colors
 export const THEME = '#F09637';
 
-
 // Font Sizes
 export const MEDIUM = 14;
 export const LARGE = 16;
