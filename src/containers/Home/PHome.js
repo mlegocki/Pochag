@@ -9,6 +9,7 @@ import type { NavigationType, cameraRollType } from 'src/types/types';
 
 // Components
 import PText from 'src/components/Text/PText';
+import PPhotoGrid from 'src/components/PhotoGrid/PPhotoGrid';
 import PNavigationHeader from 'src/components/NavigationHeader/PNavigationHeader';
 import PActivityIndicator from 'src/components/ActivityIndicator/PActivityIndicator';
 
@@ -16,11 +17,11 @@ import PActivityIndicator from 'src/components/ActivityIndicator/PActivityIndica
 import StyleUtil from 'src/utils/StyleUtil';
 
 // Styling
-import HomeStyles from 'src/containers/Home/HomeStyles';
+import PHomeStyles from 'src/containers/Home/PHomeStyles';
 
 import { getPhotos } from 'src/store/actions/cameraRollActions';
 
-const styles = StyleUtil.getStyles(HomeStyles);
+const styles = StyleUtil.getStyles(PHomeStyles);
 
 type PropsType = {
   navigation: NavigationType,
@@ -40,7 +41,8 @@ export class Home extends Component<PropsType> {
   render() {
     const { navigation, cameraRoll } = this.props;
     const { loading, error, photos } = cameraRoll;
-
+    const photosLoaded = photos.length > 0 && !loading;
+    
     return (
       <View>
         <PNavigationHeader
@@ -50,13 +52,16 @@ export class Home extends Component<PropsType> {
         {loading &&
           <PActivityIndicator />
         }
-        {!loading &&
+        {photosLoaded && (
           <View>
             <PText>
               List of Stories
             </PText>
+            <PPhotoGrid
+              photos={photos}
+            />
           </View>
-        }
+        )}
       </View>
     );
   }

@@ -5,6 +5,6 @@ const styles = {
     fontFamily: ROBOTO_REGULAR,
     fontSize: MEDIUM
   }
-}
+};
 
 export default styles;
