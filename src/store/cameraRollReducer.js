@@ -6,7 +6,7 @@ import type { cameraRollType } from '@types/types';
 import { GET_PHOTOS, GET_PHOTOS_SUCCESS, GET_PHOTOS_ERROR } from 'src/store/actions/cameraRollActions';
 
 const INITIAL_STATE = {
-  loading: false,
+  loading: true,
   photos: [],
   error: ''
 };
