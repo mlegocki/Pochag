@@ -1,4 +1,4 @@
-import { THEME } from 'src/styles/styles';
+import { THEME } from '@styles/styles';
 
 const styles = {
   default: {
