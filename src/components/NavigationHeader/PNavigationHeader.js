@@ -1,4 +1,5 @@
 // @flow
+
 import React from 'react';
 import { View, TouchableHighlight } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
@@ -9,15 +10,15 @@ import type { NavigationType } from '@types/types';
 // Components
 import PText from 'src/components/Text/PText';
 
-// Styles
-import { THEME } from 'src/styles/styles';
-import PNavigationHeaderStyles from 'src/components/NavigationHeader/PNavigationHeaderStyles';
-
 // Utilities
 import StyleUtil from 'src/utils/StyleUtil';
 
 // Constants
 import * as CONSTANTS from 'src/assets/strings/strings';
+
+// Styles
+import { THEME } from 'src/styles/styles';
+import PNavigationHeaderStyles from 'src/components/NavigationHeader/PNavigationHeaderStyles';
 
 type PropTypes = {
   title?: string,

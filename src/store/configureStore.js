@@ -1,7 +1,7 @@
 import { combineReducers, applyMiddleware } from 'redux';
 import { createStore } from 'redux';
-import logger from 'redux-logger'
-import createSagaMiddleware from 'redux-saga'
+import logger from 'redux-logger';
+import createSagaMiddleware from 'redux-saga';
 
 import cameraRoll from 'src/store/cameraRollReducer';
 
@@ -17,6 +17,6 @@ const middleware = [sagaMiddleware, logger];
 
 const store = createStore(testStore, applyMiddleware(...middleware));
 
-sagaMiddleware.run(rootSaga)
+sagaMiddleware.run(rootSaga);
 
 export default store;

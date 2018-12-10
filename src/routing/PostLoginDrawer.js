@@ -1,15 +1,19 @@
 import { createAppContainer, createDrawerNavigator } from 'react-navigation';
-import Home from 'src/containers/Home/Home';
+import PHome from 'src/containers/Home/PHome';
+import PStories from 'src/containers/Stories/PStories';
 
 const RouteConfig = {
   Home: {
-    screen: Home
+    screen: PHome
+  },
+  Stories: { 
+    screen: PStories
   }
-}
+};
 
 const DrawerNavigatorConfig = {
   initialRouteName: 'Home',
   headerMode: 'none'
-}
+};
 
 export default createAppContainer(createDrawerNavigator(RouteConfig, DrawerNavigatorConfig));

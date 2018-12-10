@@ -1,4 +1,4 @@
-import { ROBOTO_LIGHT, LARGE } from 'src/styles/styles';
+import { LARGE } from '@styles/styles';
 
 const styles = {
   container: {
@@ -20,6 +20,6 @@ const styles = {
   defaultText: {
     fontSize: LARGE 
   }
-}
+};
 
 export default styles;

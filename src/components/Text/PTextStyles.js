@@ -1,4 +1,4 @@
-import { ROBOTO_LIGHT, MEDIUM } from 'src/styles/styles';
+import { ROBOTO_LIGHT, MEDIUM } from '@styles/styles';
 
 const styles = {
   default: { 
