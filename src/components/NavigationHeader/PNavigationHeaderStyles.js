@@ -1,13 +1,13 @@
 import { LARGE } from '@styles/styles';
 
 const styles = {
-  container: {
+  defaultContainer: {
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'row',
     
     minHeight: 40,
-    paddingTop: 20
+    marginTop: 30
   },
   defaultIcon: {
     fontSize: 30

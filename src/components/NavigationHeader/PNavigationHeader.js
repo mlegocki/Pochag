@@ -32,7 +32,7 @@ export const PNavigationHeader = (props: PropTypes) => {
   const { title, icon, navigation } = props;
   
   return (
-    <View style={styles.container}>
+    <View style={styles.defaultContainer}>
       <TouchableHighlight
         onPress={() => navigation.openDrawer()}
         underlayColor={THEME}
