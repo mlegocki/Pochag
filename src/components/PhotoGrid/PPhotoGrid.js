@@ -17,7 +17,7 @@ type PropTypes = {
 
 const styles = StyleUtil.getStyles(PPhotoGridStyles);
 
-export const PhotoGrid = (props: PropTypes) => {
+export const PPhotoGrid = (props: PropTypes) => {
   const { photos } = props;
 
   return (
@@ -40,4 +40,4 @@ export const PhotoGrid = (props: PropTypes) => {
   );
 };
 
-export default PhotoGrid;
+export default PPhotoGrid;
