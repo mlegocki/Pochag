@@ -1,3 +1,4 @@
+import StyleUtil from 'src/utils/StyleUtil';
 import {
   XXLARGE,
   PATRICK_HAND_REGULAR
@@ -26,4 +27,4 @@ const styles = {
   }
 };
 
-export default styles;
+export default StyleUtil.getStyles(styles);

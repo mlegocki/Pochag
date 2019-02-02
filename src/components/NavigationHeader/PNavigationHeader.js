@@ -18,15 +18,13 @@ import * as CONSTANTS from 'src/assets/strings/strings';
 
 // Styles
 import { THEME } from 'src/styles/styles';
-import PNavigationHeaderStyles from 'src/components/NavigationHeader/PNavigationHeaderStyles';
+import styles from 'src/components/NavigationHeader/PNavigationHeaderStyles';
 
 type PropTypes = {
   title?: string,
   icon?: string,
   navigation: NavigationType
 };
-
-const styles = StyleUtil.getStyles(PNavigationHeaderStyles);
 
 export const PNavigationHeader = (props: PropTypes) => {
   const { title, icon, navigation } = props;

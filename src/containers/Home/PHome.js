@@ -9,19 +9,17 @@ import type { NavigationType, cameraRollType } from 'src/types/types';
 
 // Components
 import PText from 'src/components/Text/PText';
-import PPhotoGrid from 'src/components/PhotoGrid/PPhotoGrid';
+import PPhotoGridRow from 'src/components/PhotoGridRow/PPhotoGridRow';
 import PNavigationHeader from 'src/components/NavigationHeader/PNavigationHeader';
 import PActivityIndicator from 'src/components/ActivityIndicator/PActivityIndicator';
 
 // Utilities
-import StyleUtil from 'src/utils/StyleUtil';
 
 // Styling
-import PHomeStyles from 'src/containers/Home/PHomeStyles';
+import styles from 'src/containers/Home/PHomeStyles';
 
 import { getPhotos } from 'src/store/actions/cameraRollActions';
 
-const styles = StyleUtil.getStyles(PHomeStyles);
 
 type PropsType = {
   navigation: NavigationType,
@@ -57,7 +55,7 @@ export class Home extends Component<PropsType> {
             <PText>
               List of Stories
             </PText>
-            <PPhotoGrid
+            <PPhotoGridRow
               photos={photos}
             />
           </View>

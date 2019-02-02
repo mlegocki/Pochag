@@ -1,3 +1,4 @@
+import StyleUtil from 'src/utils/StyleUtil';
 import { ROBOTO_REGULAR, MEDIUM } from 'src/styles/styles';
 
 const styles = {
@@ -7,4 +8,4 @@ const styles = {
   }
 };
 
-export default styles;
+export default StyleUtil.getStyles(styles);

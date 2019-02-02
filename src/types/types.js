@@ -9,14 +9,14 @@ export type StyleSheetType = StyleSheetPropType;
 export type NavigationType = NavigationScreenProp;
 
 // cameraRoll
-export type photo = { 
+export type photoType = { 
   groupName: string, 
-  image: image,
+  image: imageType,
   timestamp: number,
   type: string
 };
 
-type image = { 
+type imageType = { 
   filename: string,
   height: number,
   isStored: boolean,
@@ -27,7 +27,7 @@ type image = {
 
 export type cameraRollType = {
   loading: boolean,
-  photos: Array<photo>,
+  photos: Array<photoType>,
   error: string
 };
 

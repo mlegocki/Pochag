@@ -1,7 +1,9 @@
+import { width } from '@styles/styles';
 import StyleUtil from 'src/utils/StyleUtil';
 
 const styles = {
-  default: {
+  imageSpacing: {
+    width: width / 12
   }
 };
 

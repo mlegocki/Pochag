@@ -5,6 +5,7 @@ export const { width, height } = Dimensions.get('screen');
 
 // Colors
 export const THEME = '#F09637';
+export const BLACK = '#000000';
 
 // Font Sizes
 export const MEDIUM = 14;
