@@ -1,11 +1,14 @@
-import { LARGE } from '@styles/styles';
+import {
+  XXLARGE,
+  PATRICK_HAND_REGULAR
+} from '@styles/styles';
 
 const styles = {
   defaultContainer: {
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'row',
-    
+
     minHeight: 40,
     marginTop: 30
   },
@@ -18,7 +21,8 @@ const styles = {
     paddingRight: 30
   },
   defaultText: {
-    fontSize: LARGE 
+    fontSize: XXLARGE,
+    fontFamily: PATRICK_HAND_REGULAR
   }
 };
 
