@@ -9,6 +9,9 @@ export const THEME = '#F09637';
 // Font Sizes
 export const MEDIUM = 14;
 export const LARGE = 16;
+export const XLARGE = 18;
+export const XXLARGE = 20;
+export const XXXLARGE = 22;
 
 // Font Families
 export const ROBOTO_BLACK = 'Roboto-Black';
@@ -29,3 +32,5 @@ export const ROBOTO_REGULAR = 'Roboto-Regular';
 
 export const ROBOTO_THIN = 'Roboto-Thin';
 export const ROBOTO_THIN_ITALIC = 'Roboto-ThinItalic';
+
+export const PATRICK_HAND_REGULAR = 'Patrick Hand';
