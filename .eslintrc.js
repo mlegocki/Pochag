@@ -1,9 +1,10 @@
 module.exports = {
     "env": {
         "es6": true,
-        "node": true
+        "node": true,
+        "react-native/react-native": true
     },
-    "extends": [ 
+    "extends": [
         "eslint:recommended",
         "plugin:react/recommended"
     ],
@@ -17,6 +18,7 @@ module.exports = {
     },
     "plugins": [
         "react",
+        "react-native"
     ],
     "rules": {
         "linebreak-style": [
@@ -31,9 +33,18 @@ module.exports = {
             "error",
             "always"
         ],
+        "no-use-before-define": [
+            "error"
+        ],
         "no-unused-vars": [
             "error",
             { "vars": "local" }
-        ]
+        ],
+        "react-native/no-unused-styles": "error",
+        "react-native/split-platform-components": "error",
+        "react-native/no-inline-styles": "error",
+        "react-native/no-color-literals": "error",
+
+        "react/jsx-no-undef": "error",
     }
 };
