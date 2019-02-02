@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -69,6 +68,7 @@
 		F43998B5945A4920A1003A3B /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D274178D15104DB2AA7BF6CD /* libRNGestureHandler.a */; };
 		F54E18BF21B5F0B90077B526 /* libRCTCameraRoll.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F54E189B21B5F06C0077B526 /* libRCTCameraRoll.a */; };
 		FC477E8C669C4C39944ED71C /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68503196380E437DB4170A38 /* libRNVectorIcons.a */; };
+		B14B70E8C57247AF87190D3A /* Patrick Hand.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C84D8B60FE0344569A3EF5AE /* Patrick Hand.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -435,6 +435,7 @@
 		F11883A24BFD48E9BD451065 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-ThinItalic.ttf"; path = "../src/assets/fonts/Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
 		F54E189121B5F06C0077B526 /* RCTCameraRoll.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTCameraRoll.xcodeproj; path = "../node_modules/react-native/Libraries/CameraRoll/RCTCameraRoll.xcodeproj"; sourceTree = "<group>"; };
 		FC002E3A543F473E9719F99A /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		C84D8B60FE0344569A3EF5AE /* Patrick Hand.ttf */ = {isa = PBXFileReference; name = "Patrick Hand.ttf"; path = "../src/assets/fonts/Patrick Hand.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -658,6 +659,7 @@
 				B9EA061547DD49ECA1E6ECC4 /* Octicons.ttf */,
 				C7653E5E4159453A906D0B95 /* SimpleLineIcons.ttf */,
 				F00FC78D7A70444A9D12D4F1 /* Zocial.ttf */,
+				C84D8B60FE0344569A3EF5AE /* Patrick Hand.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1286,6 +1288,7 @@
 				0A50052257CB409EA4FEF0CF /* Octicons.ttf in Resources */,
 				A4C8FCC97FFF4B91BB924E11 /* SimpleLineIcons.ttf in Resources */,
 				4EAA2143A22244908EE49A28 /* Zocial.ttf in Resources */,
+				B14B70E8C57247AF87190D3A /* Patrick Hand.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
