@@ -9,7 +9,7 @@ import type { NavigationType, cameraRollType } from 'src/types/types';
 
 // Components
 import PText from 'src/components/Text/PText';
-import PPhotoGrid from 'src/components/PhotoGrid/PPhotoGrid';
+import PPhotoGridRow from 'src/components/PhotoGridRow/PPhotoGridRow';
 import PNavigationHeader from 'src/components/NavigationHeader/PNavigationHeader';
 import PActivityIndicator from 'src/components/ActivityIndicator/PActivityIndicator';
 
@@ -55,7 +55,7 @@ export class Home extends Component<PropsType> {
             <PText>
               List of Stories
             </PText>
-            <PPhotoGrid
+            <PPhotoGridRow
               photos={photos}
             />
           </View>

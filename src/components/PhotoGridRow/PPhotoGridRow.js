@@ -7,7 +7,7 @@ import type { photo } from '@types/types';
 import PPhoto from 'src/components/Photo/PPhoto';
 
 // Styles
-import styles from 'src/components/PhotoGrid/PPhotoGridStyles';
+import styles from 'src/components/PhotoGridRow/PPhotoGridRowStyles';
 
 // Utilities
 import { FlatList } from 'react-native-gesture-handler';
@@ -18,7 +18,7 @@ type PropTypes = {
 }
 
 
-export class PPhotoGrid extends PureComponent<PropTypes> {
+export class PPhotoGridRow extends PureComponent<PropTypes> {
   constructor(props: PropTypes) {
     super(props);
   }
@@ -53,6 +53,6 @@ export class PPhotoGrid extends PureComponent<PropTypes> {
       />
     );
   }
-};
+}
 
-export default PPhotoGrid;
+export default PPhotoGridRow;
