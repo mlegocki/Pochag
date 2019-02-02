@@ -1,8 +1,8 @@
-import {  } from 'src/styles/styles';
+import StyleUtil from 'src/utils/StyleUtil';
 
 const styles = {
-  default: { 
+  default: {
   }
 };
 
-export default styles;
+export default StyleUtil.getStyles(styles);

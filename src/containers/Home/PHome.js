@@ -14,14 +14,12 @@ import PNavigationHeader from 'src/components/NavigationHeader/PNavigationHeader
 import PActivityIndicator from 'src/components/ActivityIndicator/PActivityIndicator';
 
 // Utilities
-import StyleUtil from 'src/utils/StyleUtil';
 
 // Styling
-import PHomeStyles from 'src/containers/Home/PHomeStyles';
+import styles from 'src/containers/Home/PHomeStyles';
 
 import { getPhotos } from 'src/store/actions/cameraRollActions';
 
-const styles = StyleUtil.getStyles(PHomeStyles);
 
 type PropsType = {
   navigation: NavigationType,

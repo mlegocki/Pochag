@@ -1,3 +1,4 @@
+import StyleUtil from 'src/utils/StyleUtil';
 import { LARGE } from '@styles/styles';
 
 const styles = {
@@ -22,4 +23,4 @@ const styles = {
   }
 };
 
-export default styles;
+export default StyleUtil.getStyles(styles);

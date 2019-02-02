@@ -1,43 +1,58 @@
-import React from 'react';
-import { View, Image } from 'react-native';
-
+import React, { PureComponent } from 'react';
+import { View } from 'react-native';
 // Types
 import type { photo } from '@types/types';
 
+// Components 
+import PPhoto from 'src/components/Photo/PPhoto';
+
 // Styles
-import PPhotoGridStyles from 'src/components/PhotoGrid/PPhotoGridStyles';
+import styles from 'src/components/PhotoGrid/PPhotoGridStyles';
 
 // Utilities
-import StyleUtil from 'src/utils/StyleUtil';
+import { FlatList } from 'react-native-gesture-handler';
 
 
 type PropTypes = {
   photos: Array<photo>
 }
 
-const styles = StyleUtil.getStyles(PPhotoGridStyles);
 
-export const PhotoGrid = (props: PropTypes) => {
-  const { photos } = props;
+export class PPhotoGrid extends PureComponent<PropTypes> {
+  constructor(props: PropTypes) {
+    super(props);
+  }
 
-  return (
-    <View style={styles.defaultContainer}>
-      {
-        photos.map(({ image }) =>
-          <View
-            style={styles.defaultImageContainer}
-            key={image.filename}
-          >
-            <Image
-              style={styles.defaultImage}
-              source={{ uri: image.uri }}
-              resizeMode='stretch'
-            />
-          </View>
-        )
-      }
-    </View>
-  );
+  _keyExtractor = item => item.image.uri
+
+  _renderItem = ({ item }) => {
+    return (
+      <PPhoto
+        photo={item}
+      />
+    );
+  }
+
+  _renderItemSeparatorComponent = () => {
+    return (
+      <View style={styles.imageSpacing}>
+      </View>
+    );
+  }
+
+  render() {
+    const { photos } = this.props;
+
+    return (
+      <FlatList
+        data={photos}
+        keyExtractor={this._keyExtractor}
+        renderItem={this._renderItem}
+        ItemSeparatorComponent={this._renderItemSeparatorComponent}
+        horizontal
+      />
+    );
+  }
 };
 
-export default PhotoGrid;
+export default PPhotoGrid;

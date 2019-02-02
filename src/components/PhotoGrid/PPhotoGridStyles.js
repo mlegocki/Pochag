@@ -1,19 +1,10 @@
 import { width } from '@styles/styles';
+import StyleUtil from 'src/utils/StyleUtil';
 
 const styles = {
-  defaultContainer: {
-    flex: 1,
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-  },
-  defaultImageContainer: { 
-    width: width / 3 - 4,
-    height: width / 3 - 4,
-    margin: 2,
-  },
-  defaultImage: {
-    flex: 1
+  imageSpacing: {
+    width: width / 12
   }
 };
 
-export default styles;
+export default StyleUtil.getStyles(styles);
